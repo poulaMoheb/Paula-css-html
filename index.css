@@ -1,0 +1,39 @@
+:root{
+    --dark-background-color:#1F2937;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: aliceblue;
+}
+.nav-bar{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-left:200px ;
+    padding-right: 200px;
+    background-color: var(--dark-background-color);
+}
+a{
+    text-decoration: none;
+    margin: 5px;    
+}
+.first-body{
+    padding-left:200px ;
+    padding-right: 200px;
+    height: 350px;
+    background-color: var(--dark-background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+
+}
