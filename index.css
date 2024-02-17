@@ -1,5 +1,7 @@
 :root{
     --dark-background-color:#1F2937;
+    --light-grey-background-color:#c3bfbf;
+    --blue-light-color:#3882F6;
 }
 *{
     margin: 0;
@@ -30,6 +32,7 @@ a{
     text-decoration: none;
     margin: 5px;    
 }
+/* first body */
 .first-body{
     padding-left:200px ;
     padding-right: 200px;
@@ -55,11 +58,111 @@ a{
     width: 150px;
     height: 50px;
     border-radius: 5%;
-    background-color: #3882F6;
+    background-color: var(--blue-light-color);
     font-size: 18px;
     font-weight: 800;
 }
 img{
-    height: 350px;
+    height: 250px;
+    width:450px;
+    aspect-ratio: unset;
+
+}
+/* second body  */
+
+.sec-body{
+    padding-left:200px ;
+    padding-right: 200px;
+    padding-top: 50px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.sec-body h1{
+    color: black;
+}
+.sec-body ul li {
+    width:150px;
+    height: 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+li img{
+    max-width: max-content;
+    max-height: 100px;
+    border: 5px solid var(--blue-light-color) ;
+    border-radius: 10%;
+}
+.sec-body ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.sec-body ul li p{
+    padding:10px;
+    font-size: small;
+    text-align: center;
+    color: black;
+}
+/* third body */
+.third-body{
+    padding-left:200px ;
+    padding-right: 200px;
+    padding-top: 50px;
+    height: 300px;
+    background-color: var(--light-grey-background-color); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.third-body p{
+    font-family: sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    color: var(--dark-background-color);
+}
+.third-body span{
+    color: var(--dark-background-color);
+    display: block;
+    text-align: end;
+}
+/* last- body */
+.last-body{
+    padding-left:200px ;
+    padding-right: 200px;
+    padding-top: 50px;
+    height: 200px;
+    
+}
+.main-d{
+    height: 50px;
+    border-radius: 2%;
+    padding: 50px;
+    background-color: var(--blue-light-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-d button{
+    background-color: var(--blue-light-color);
+    border: 3px solid white ;
+    width: 150px;
+    height: 30px;
+    border-radius: 5%;
+}
+/* footer */
+.footer{
+    background-color: var(--dark-background-color);
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    height: 100px;
 
 }
